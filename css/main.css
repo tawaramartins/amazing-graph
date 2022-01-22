@@ -1,3 +1,97 @@
-.title {
-    color: #0000FF;
+/* FONTES */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+:root {
+    /* COLORS */
+    --header-color:  #D2872C;
+    --ul-color: #766F68;
+    --h1-color: #766F68;
+    --p-color: #766F68;
+    --btn-background: #D2872C;
+    --btn-color: #FFFFFF;
+    --btn-border: #D2872C;
+
+    /*FONTE*/
+    --specify-families: 'Roboto', sans-serif;
+}
+/* HEADER */
+
+/*** HEADER CONTAINER  ***/
+header.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2.7rem;
+}
+
+/*Style header*/
+header.title a {
+    color: var(--header-color);
+    font-family: var(--specify-families);
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-decoration: none;
+    
+}
+
+
+/* MENU */
+
+/* NAV CONTAINER*/
+nav.menu ul {
+    display: flex;
+    align-items: center;
+}
+
+nav.menu ul, li {
+    color: var(--ul-color);
+    font-family: var(--specify-families);
+    gap: 2rem;
+    cursor: pointer;
+}
+
+
+/* MAIN */
+/*** MAIN CONTAINER ***/
+
+main.main-content {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 2.7rem;
+
+}
+main.main-content h1 {
+    color: var(--h1-color);
+    font-family: var(--specify-families);
+    font-size: 5.5rem;
+    line-height: 5.4rem;
+    font-weight: bold;
+
+
+}
+main.main-content p {
+    color: var(--p-color);
+    font-family: var(--specify-families);
+    font-size: 1.5rem;
+    line-height: 5.5rem;
+    
+}
+
+
+/* Button */
+
+main.main-content .btn {
+    background-color: var(--btn-background);
+    color: var(--btn-color);
+    border: none;
+
+    padding: 1rem;
+    width: 15.1rem;
+    border-radius: 15px;
+
+    font-size: 1.3rem;
+    font-weight: bold;
+    cursor: pointer;
 }
