@@ -6,11 +6,14 @@
     /* COLORS */
     --header-color:  #D2872C;
     --ul-color: #766F68;
+    --menu-bg: #766F68;
     --h1-color: #766F68;
     --p-color: #766F68;
     --btn-background: #D2872C;
     --btn-color: #FFFFFF;
     --btn-border: #D2872C;
+    --bg-nav: #D2872C;
+    --bg-hover: #db953fcb;
 
     /*FONTE*/
     --specify-families: 'Roboto', sans-serif;
@@ -30,7 +33,7 @@ header.title a {
     color: var(--header-color);
     font-family: var(--specify-families);
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-decoration: none;
     
 }
@@ -45,12 +48,29 @@ nav.menu ul {
 }
 
 nav.menu ul, li {
-    color: var(--ul-color);
-    font-family: var(--specify-families);
-    gap: 2rem;
-    cursor: pointer;
+    display: none
 }
 
+nav.menu {
+    background-color: var(--bg-nav);
+    width: 414px;
+    height: 896px;
+    display: none;
+}
+
+/*** MENU MOBILE ***/
+img.menu-team {
+    width: 40px;
+    height: 30px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+nav.menu li:hover {
+    background-color: var(--bg-hover);
+}
 
 /* MAIN */
 /*** MAIN CONTAINER ***/
@@ -59,15 +79,18 @@ main.main-content {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    margin: 2.7rem;
+    margin: 3.7rem;
 
 }
 main.main-content h1 {
     color: var(--h1-color);
     font-family: var(--specify-families);
-    font-size: 5.5rem;
-    line-height: 5.4rem;
+    font-size: 2.5em;
+    line-height: 3.4rem;
     font-weight: bold;
+    text-align: center;
+
+    margin: 1rem 0 1rem 0;
 
 
 }
@@ -75,8 +98,10 @@ main.main-content p {
     color: var(--p-color);
     font-family: var(--specify-families);
     font-size: 1.5rem;
-    line-height: 5.5rem;
-    
+    line-height: 2.2rem;
+    text-align: center;
+    margin: 1rem 0 1rem 0;
+
 }
 
 
@@ -88,10 +113,21 @@ main.main-content .btn {
     border: none;
 
     padding: 1rem;
-    width: 15.1rem;
+    margin: auto;
+    width: 15.4rem;
     border-radius: 15px;
 
     font-size: 1.3rem;
     font-weight: bold;
     cursor: pointer;
+    margin: 1rem 0 1rem 0;
+
+}
+
+/*** IMAGEM ***/
+
+img.img-team {
+    width: 420px;
+    height: 300px;
+    margin: auto;
 }
