@@ -1,9 +1,11 @@
 # AMAZING GRAPH 
 
-<p align="center">Landing page para site de criação de gráficos.</p>
-<h4 align="center">Em construção 🚀</h4>
+<p align="center">Landing page para site de criação de gráficos.p>
+<h4 align="center">Status: desktop construção 🚀</h4>
 
-## Meu processo
+## Features
+[x] mobile concluido
+[] desktop construção
 
 ### 🛠 Construído com
 
